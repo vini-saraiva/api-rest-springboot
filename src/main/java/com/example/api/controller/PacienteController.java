@@ -3,6 +3,7 @@ package com.example.api.controller;
 import com.example.api.paciente.DadosCadastroPeciente;
 import com.example.api.paciente.Paciente;
 import com.example.api.paciente.PacienteRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,6 +21,7 @@ public class PacienteController {
     private PacienteRepository repository;
 
     @PostMapping
+    @Transactional
     public void CadastrarPaciente(@RequestBody DadosCadastroPeciente paciente){
 
       repository.save(new Paciente(paciente));
