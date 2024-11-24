@@ -1,0 +1,15 @@
+{
+	"nome":"Vinicius Saraiva",
+	"email":"vns140@hotmail.com",
+	"crm":"123456",
+	"especialidade":"ortopedia",
+	"endereco":{
+		"logradouro":"Rua Saboo",
+		"bairro":"Vl. Sta. Isabel",
+		"cep":"03432020",
+		"cidade":"Sao Paulo",
+		"uf":"SP",
+		"numero": "33",
+		"complemento": "Casa B"
+	}
+}
