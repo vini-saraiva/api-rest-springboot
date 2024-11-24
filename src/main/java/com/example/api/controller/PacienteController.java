@@ -21,7 +21,7 @@ public class PacienteController {
 
     @PostMapping
     public void CadastrarPaciente(@RequestBody DadosCadastroPeciente paciente){
-      //Fazer o autoMapper
-      repository.save(new Paciente());
+
+      repository.save(new Paciente(paciente));
     }
 }

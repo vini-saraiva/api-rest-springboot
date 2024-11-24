@@ -25,4 +25,11 @@ public class Paciente {
     @Embedded
     Endereco endereco;
 
+    public Paciente(DadosCadastroPeciente paciente) {
+      this.nome = paciente.nome();
+      this.email = paciente.email();
+      this.cpf = paciente.cpf();
+      this.endereco = new Endereco(paciente.endereco());
+    }
+
 }
