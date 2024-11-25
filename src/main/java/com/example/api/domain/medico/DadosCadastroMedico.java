@@ -1,13 +1,12 @@
-package com.example.api.paciente;
+package com.example.api.domain.medico;
 
-import com.example.api.endereco.DadosEndereco;
-import com.example.api.medico.Especialidade;
+import com.example.api.domain.endereco.DadosEndereco;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 
-public record DadosCadastroPeciente(
+public record DadosCadastroMedico(
         @NotBlank
         String nome,
 
@@ -17,7 +16,13 @@ public record DadosCadastroPeciente(
 
         @NotBlank
         @Pattern(regexp = "\\d{4,6}")
-        String cpf,
+        String crm,
+
+        @NotBlank
+        String telefone,
+
+        @NotNull
+        Especialidade especialidade,
 
         @NotNull
         DadosEndereco endereco) {

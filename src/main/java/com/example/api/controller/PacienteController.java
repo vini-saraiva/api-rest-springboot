@@ -1,8 +1,8 @@
 package com.example.api.controller;
 
-import com.example.api.paciente.DadosCadastroPeciente;
-import com.example.api.paciente.Paciente;
-import com.example.api.paciente.PacienteRepository;
+import com.example.api.domain.paciente.DadosCadastroPeciente;
+import com.example.api.domain.paciente.Paciente;
+import com.example.api.domain.paciente.PacienteRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

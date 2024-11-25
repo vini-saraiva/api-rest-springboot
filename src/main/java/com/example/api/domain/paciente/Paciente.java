@@ -1,7 +1,6 @@
-package com.example.api.paciente;
+package com.example.api.domain.paciente;
 
-import com.example.api.endereco.Endereco;
-import com.example.api.medico.Especialidade;
+import com.example.api.domain.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
