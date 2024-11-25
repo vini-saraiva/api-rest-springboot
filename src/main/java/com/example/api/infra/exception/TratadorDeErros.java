@@ -1,6 +1,5 @@
-package com.example.api.infra;
+package com.example.api.infra.exception;
 
-import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
